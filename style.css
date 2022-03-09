@@ -1,0 +1,461 @@
+:root {
+    --gris: #909090;
+    --negro: black;
+    --negroclaro: #1d1d1d;
+  }
+  html{
+      scroll-behavior: smooth;
+  }
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-size: 10px;
+    text-align: justify;
+}
+.primeracapa{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background: radial-gradient(50.7% 50.7% at 50% 50%, rgba(255, 255, 255, 0) 0%, rgba(1, 1, 1, 0.16) 100%), #FFFFFF;
+    mix-blend-mode: normal;
+}
+.nav-bar{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 10;
+}
+.nav-bar__options{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: space-around;
+}
+.nav-bar__options li{
+    width: 25%;
+}
+.nav-bar__options li a{
+    height: 100%;
+    width: 100%;
+    display: inline-block;
+    font-size: 2rem;
+    padding: 0.5rem 3rem;
+    color: var(--negro);
+    background-image: linear-gradient(to right, transparent 50%, black 50%);
+    background-size: 200%;
+    background-repeat: no-repeat;
+    background-position: left;
+    transition: 0.5s;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-bar__options li a:hover{
+    background-position: right;
+    color: white;
+}
+.center{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+}
+.title__container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.pretitle{
+    color: #909090;
+}
+.pretitle span{
+    font-family: 'Raleway', sans-serif;
+    font-size: 3rem;
+    color: #1d1d1d;
+}
+.title{
+    font-size: 8rem;
+    text-align: center;
+    line-height: 8rem;
+    font-family: 'Raleway', sans-serif;
+}
+.secondtitle{
+    font-family: 'Quicksand', sans-serif;
+    color: #909090;
+}
+.title__container p{
+    font-size: 3rem;
+    font-family: 'Quicksand', sans-serif;
+}
+.portales{
+    width: 20rem;
+    max-width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+.portales i {
+    font-size: 3rem;
+    color: var(--gris);
+    transition: all 0.5s ease;
+}
+.twitter-icon:hover{
+    color: #00acee;
+}
+.github-icon:hover{
+    color: #171515;
+}
+.linkedin-icon:hover{
+    color: #0072b1;
+}
+.segundacapa{
+    width: 100%;
+    max-height: 150vh;
+    height: 100vh;
+    background-color: var(--negro);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.presentation{
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 700px;
+    min-width: 300px;
+}
+.segundacapa h2{
+    color: white;
+    width: 100%;
+    font-size: 7rem;
+    text-align: center;
+    padding: 10px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    letter-spacing: 10px;
+}
+.segundacapa p{
+    padding: 0px 60px;
+    color: white;
+    font-size: 3rem;
+    text-align: justify;
+    font-family: 'Quicksand', sans-serif;
+    line-height: 4rem;
+}
+.presentation__photo{
+    width: 50%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fotoperfil{
+    width: 450px;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 3px 3px 10px white;
+    transition: all 500ms ease;
+}
+.fotoperfil:hover{
+    transform: scale(1.2);
+}
+.personality{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: auto;
+}
+.personality div{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.personality h3{
+    color: white;
+    font-size: 3rem;
+    width: 100%;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    letter-spacing: 5px;
+    padding-bottom: 20px;
+}
+.personality p{
+    font-size: 2rem;
+    font-family: 'Quicksand', sans-serif;
+    line-height: 2rem;
+}
+.terceracapa{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: radial-gradient(50.7% 50.7% at 50% 50%, rgba(255, 255, 255, 0) 0%, rgba(1, 1, 1, 0.16) 100%), #FFFFFF;
+    mix-blend-mode: normal;
+}
+.developingtext__container h2{
+    font-size: 6rem;
+    padding: 2rem;
+    border: 4px solid black;
+    font-family: 'Raleway', sans-serif;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    font-weight: bold;
+    letter-spacing: 10px;
+}
+.skills{
+    width: 700px;
+    max-width: 100%;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    letter-spacing: 5px;
+}
+.container__using--now , .container__learning , .container__others{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.skills h3{
+    font-size: 4rem;
+    color: var(--negro);
+    font-weight: bold;
+    font-family: 'Quicksand', sans-serif;
+    color: #909090;
+    width: 100%;
+}
+.skills div i{
+    font-size: 5rem;
+    padding: 10px;
+    transition: 0.5s;
+}
+
+i:hover , .skills div div img:hover{
+    transform: scale(1.1);
+}
+.skills div div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 30px;
+    flex-wrap: wrap;
+}
+.skills div div img{
+    width: 80px;
+    transition: 0.5s;
+}
+.skills div div p {
+    letter-spacing: 3px;
+    font-size: 2rem;
+    text-align: center;
+}
+.englishcontainer{
+    margin-left: 30px;
+}
+.fa-html5{
+    color: #f1662c;
+}
+.fa-css3-alt{
+    color: #35a9dc;
+}
+.fa-bootstrap{
+    color: #8754d5;
+}
+.fa-js-square{
+    color: #f0bf25;
+}
+.fa-figma{
+    color: rgb(233, 53, 53);
+}
+.cuartacapa{
+    width: 100%;
+    height: 100vh;
+    background-color: #1d1d1d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cuartacapa h2{
+    color: white;
+    font-size: 4rem;
+}
+.quintacapa{
+    width: 100%;
+    height: 100vh;
+    background: radial-gradient(50.7% 50.7% at 50% 50%, rgba(255, 255, 255, 0) 0%, rgba(1, 1, 1, 0.16) 100%), #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.quintacapa h2{
+    font-size: 4rem;
+    padding: 2rem;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    max-width: 100%;
+    width: 500px;
+}
+form label{
+    font-size: 2rem;
+    padding: 20px 0px 10px 10px;
+}
+form input{
+    padding: 5px;
+    border: none;
+    border-bottom: 1px solid #909090;
+}
+@media only screen and (max-width: 600px){
+    *{
+        font-size: 5px;
+    }
+    .nav-bar{
+        width: 100%;
+        display: none;
+    }
+    .nav-bar ul{
+        width: 100%;
+    }
+    .nav-bar ul li a{
+        padding: 0px;
+    }
+ 
+    .portales i {
+        font-size: 5rem;
+    }
+    .segundacapa , .terceracapa , .cuartacapa , .quintacapa{
+        padding: 20px;
+    }
+    .presentation{
+        width: auto;
+    }
+    .presentation p{
+        padding: 20px;
+    }
+    .presentation__photo{
+        width: 100%;
+        height: 350px;
+        justify-content: center;
+        align-items: center;
+    }
+    .fotoperfil{
+        max-width: 300px;
+        height: 300px;
+    }
+    .fotoperfil:hover{
+        transform: scale(1.1);
+    }
+    .personality{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .personality div{
+        height: auto;
+    }
+    .personality h3{
+        padding: 10px;
+    }
+    .development p , .design p{
+        padding: 0px 10px;
+        line-height: 3rem;
+    }
+    .terceracapa{
+        flex-direction: column;
+    }
+    .skills h3{
+        width: 100%;
+        padding-left: 2rem;
+    }
+    .skills div div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        margin-left: 0px;
+    }
+    .developingtext__container h2{
+        letter-spacing: 2px;
+    }
+    .skills div div i {
+        font-size: 6rem;
+    }
+    .skills div div img{
+        width: 40px;
+    }
+    .skills div div p{
+        font-size: 3rem;
+    }
+    .container__others div{
+        padding: 40px ;
+    }
+}
+
+
+
+
+
+
+@media only screen and (max-width: 380px){
+
+    .fotoperfil{
+        width: 200px;
+        height: 200px;
+    }
+    .presentation p{
+        padding: 0px 20px;
+    }
+    .presentation__photo{
+        height: 200px;
+    }
+    .development p , .design p{
+        padding: 0px 10px;
+    }
+   
+    .skills{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .container__using--now , .container__learning , .container__others{
+        justify-content: space-around;
+    }
+    .container__learning , .container__others{
+        height: 150px;
+    }
+    .skills div div{
+        height: 50px;
+    }
+    .container__others div{
+        padding: 20px ;
+    }
+}
