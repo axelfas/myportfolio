@@ -9,7 +9,7 @@
     --letraclara: #cf151d;
   }
 html{
-    font-size: 10px;
+    font-size: 8px;
     background-color: var(--fondo);
     scroll-behavior: smooth;
 }
@@ -479,7 +479,7 @@ ul li a:hover{
 }
 @media only screen and (min-width : 992px) {
     html{
-        font-size: 15px;
+        font-size: 10px;
     }
     .title{
         font-size: 5.5rem;
