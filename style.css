@@ -115,7 +115,7 @@ ul li a:hover{
 }
 .title{
     color: var(--letraoscura);
-    font-size: 5rem;
+    font-size: 4.5rem;
     text-align: center;
     line-height: 6rem;
     font-family: 'Lobster', cursive;
@@ -125,7 +125,6 @@ ul li a:hover{
     white-space: nowrap;
     border-right: 2px solid;
     width: 100%;
-    background-color: red;
     margin-left: auto;
     margin-right: auto;
     padding-top: 5px;
